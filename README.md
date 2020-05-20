@@ -2,8 +2,7 @@
 
 An `Ecto.Type` implementation of [ULID](https://github.com/ulid/spec).
 
-`Ecto.ULID` should be compatible anywhere that `Ecto.UUID` is supported. It has been confirmed to
-work with PostgreSQL and MySQL on Ecto 2.x and 3.x.  Ecto 1.x is *not* supported.
+`Ecto.ULID` should be compatible anywhere that `Ecto.UUID` is supported. This fork requires Ecto 3.2.0 or above.
 
 ULID is a 128-bit universally unique lexicographically sortable identifier. ULID is
 binary-compatible with UUID, so it can be stored in a `uuid` column in a database.
@@ -15,7 +14,7 @@ binary-compatible with UUID, so it can be stored in a `uuid` column in a databas
 * Autogenerate ULID when used as a primary key.
 * Supports reading and writing ULID in a database backed by its native `uuid` type (no database
   extensions required).
-* Supports Ecto 2.x and Ecto 3.x.
+* Requires Ecto 3.2.0 or above
 * Supports Elixir 1.4 and newer.
 * Confirmed working on PostgreSQL and MySQL.
 * Optimized for high throughput.
