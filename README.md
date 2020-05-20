@@ -111,7 +111,7 @@ A ULID can be generated in string or binary format by calling `generate/0` or `b
 can be useful when generating ULIDs to send to external systems:
 
 ```elixir
-Ecto.ULID.generate()    #=> "01BZ13RV29T5S8HV45EDNC748P"
+Ecto.ULID.generate()    #=> "01bz13rv29t5s8hv45ednc748p"
 Ecto.ULID.bingenerate() #=> <<1, 95, 194, 60, 108, 73, 209, 114, 136, 236, 133, 115, 106, 195, 145, 22>>
 ```
 

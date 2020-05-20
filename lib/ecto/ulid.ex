@@ -99,28 +99,28 @@ defmodule Ecto.ULID do
   defp e(7), do: ?7
   defp e(8), do: ?8
   defp e(9), do: ?9
-  defp e(10), do: ?A
-  defp e(11), do: ?B
-  defp e(12), do: ?C
-  defp e(13), do: ?D
-  defp e(14), do: ?E
-  defp e(15), do: ?F
-  defp e(16), do: ?G
-  defp e(17), do: ?H
-  defp e(18), do: ?J
-  defp e(19), do: ?K
-  defp e(20), do: ?M
-  defp e(21), do: ?N
-  defp e(22), do: ?P
-  defp e(23), do: ?Q
-  defp e(24), do: ?R
-  defp e(25), do: ?S
-  defp e(26), do: ?T
-  defp e(27), do: ?V
-  defp e(28), do: ?W
-  defp e(29), do: ?X
-  defp e(30), do: ?Y
-  defp e(31), do: ?Z
+  defp e(10), do: ?a
+  defp e(11), do: ?b
+  defp e(12), do: ?c
+  defp e(13), do: ?d
+  defp e(14), do: ?e
+  defp e(15), do: ?f
+  defp e(16), do: ?g
+  defp e(17), do: ?h
+  defp e(18), do: ?j
+  defp e(19), do: ?k
+  defp e(20), do: ?m
+  defp e(21), do: ?n
+  defp e(22), do: ?p
+  defp e(23), do: ?q
+  defp e(24), do: ?r
+  defp e(25), do: ?s
+  defp e(26), do: ?t
+  defp e(27), do: ?v
+  defp e(28), do: ?w
+  defp e(29), do: ?x
+  defp e(30), do: ?y
+  defp e(31), do: ?z
 
   defp decode(<< c1::8,  c2::8,  c3::8,  c4::8,  c5::8,  c6::8,  c7::8,  c8::8,  c9::8, c10::8, c11::8, c12::8, c13::8,
                 c14::8, c15::8, c16::8, c17::8, c18::8, c19::8, c20::8, c21::8, c22::8, c23::8, c24::8, c25::8, c26::8>>) do
@@ -167,6 +167,28 @@ defmodule Ecto.ULID do
   defp d(?X), do: 29
   defp d(?Y), do: 30
   defp d(?Z), do: 31
+  defp d(?a), do: 10
+  defp d(?b), do: 11
+  defp d(?c), do: 12
+  defp d(?d), do: 13
+  defp d(?e), do: 14
+  defp d(?f), do: 15
+  defp d(?g), do: 16
+  defp d(?h), do: 17
+  defp d(?j), do: 18
+  defp d(?k), do: 19
+  defp d(?m), do: 20
+  defp d(?n), do: 21
+  defp d(?p), do: 22
+  defp d(?q), do: 23
+  defp d(?r), do: 24
+  defp d(?s), do: 25
+  defp d(?t), do: 26
+  defp d(?v), do: 27
+  defp d(?w), do: 28
+  defp d(?x), do: 29
+  defp d(?y), do: 30
+  defp d(?z), do: 31
   defp d(_), do: throw :error
 
   defp valid?(<< c1::8,  c2::8,  c3::8,  c4::8,  c5::8,  c6::8,  c7::8,  c8::8,  c9::8, c10::8, c11::8, c12::8, c13::8,
@@ -210,5 +232,27 @@ defmodule Ecto.ULID do
   defp v(?X), do: true
   defp v(?Y), do: true
   defp v(?Z), do: true
+  defp v(?a), do: true
+  defp v(?b), do: true
+  defp v(?c), do: true
+  defp v(?d), do: true
+  defp v(?e), do: true
+  defp v(?f), do: true
+  defp v(?g), do: true
+  defp v(?h), do: true
+  defp v(?j), do: true
+  defp v(?k), do: true
+  defp v(?m), do: true
+  defp v(?n), do: true
+  defp v(?p), do: true
+  defp v(?q), do: true
+  defp v(?r), do: true
+  defp v(?s), do: true
+  defp v(?t), do: true
+  defp v(?v), do: true
+  defp v(?w), do: true
+  defp v(?x), do: true
+  defp v(?y), do: true
+  defp v(?z), do: true
   defp v(_), do: false
 end
